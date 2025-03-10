@@ -17,12 +17,14 @@ export default defineConfig({
         enabled: true,
       },
       manifest: {
-        name: 'しまね交通機関ナビ', // アプリケーションリスト等で表示される名前
-        short_name: 'しまナビ', // ホーム画面で表示される名前
+        name: 'しまね交通機関ナビ',
+        short_name: 'しまナビ',
         description: 'しまね交通機関ナビ',
-        theme_color: '#000000', // テーマカラー　最低限指定が必要
-        display: 'standalone', // 表示モード standaloneにするとネイティブアプリっぽくなる
-        icons: [ // 先ほどコンソールに出力されたものをコピペでOK
+        start_url: '/',
+        Background_color: '#000000',
+        theme_color: '#000000',
+        display: 'standalone',
+        icons: [
           {
             src: 'pwa-64x64.png',
             sizes: '64x64',
