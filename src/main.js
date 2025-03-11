@@ -3,6 +3,7 @@ import { createPinia } from 'pinia';
 
 import App from './App.vue';
 import router from './router';
+import VueGTag from 'vue-gtag';
 
 import './assets/style.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -23,6 +24,15 @@ document.documentElement.style.setProperty('--secondary-color', secondaryColor);
 const app = createApp(App);
 
 app.use(createPinia());
+app.use(
+  VueGTag,
+  {
+    config: {
+      id: '{ G-W89V3Y7Y7M }'
+    }
+  },
+  router
+);
 app.use(router);
 app.component('font-awesome-icon', FontAwesomeIcon);
 
