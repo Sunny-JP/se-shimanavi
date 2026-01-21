@@ -40,10 +40,10 @@ const reloadPage = () => {
         <font-awesome-icon icon="train-subway" class="icon" />
         <span>Train</span>
       </button>
-      <button class="tab" :class="{ active: currentRoute === '/info' }" @click="changeRoute('/info')">
+      <!--<button class="tab" :class="{ active: currentRoute === '/info' }" @click="changeRoute('/info')">
         <font-awesome-icon icon="circle-info" class="icon" />
         <span>Info</span>
-      </button>
+      </button>-->
       <button class="tab" :class="{ active: currentRoute === '/config' }" @click="changeRoute('/config')">
         <font-awesome-icon icon="sliders" class="icon" />
         <span>Config</span>
