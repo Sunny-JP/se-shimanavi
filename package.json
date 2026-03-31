@@ -27,6 +27,6 @@
     "vite-plugin-vue-devtools": "^7.7.2"
   },
   "overrides": {
-    "serialize-javascript": "^7.0.3"
+    "serialize-javascript": "^7.0.5"
   }
 }
